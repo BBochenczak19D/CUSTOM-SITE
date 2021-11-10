@@ -1,0 +1,45 @@
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border: 1px black solid;
+    border-radius: 20px;
+    z-index: 2000;
+    background-color: white;
+    max-width: 50%;
+    height: 25%;
+    transition: all .5s;
+  
+  }
+  .modal-active{
+    transform: translate(-50%,-50%) scale(1);
+    
+  }
+  .modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  .modal-body{
+    padding: 10px 15px;
+  }
+  .overlay{
+    position: fixed;
+    opacity: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transition: all 1.5s;
+    z-index: 10;
+    pointer-events: none;
+    
+  }
+  .overlay-active{
+    opacity: 0.5;
+  
+  }

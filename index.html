@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CUSTOM</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-modal.css" />
+    <link rel="stylesheet" href="style-page3.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
@@ -13,42 +15,109 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Khula:wght@700&family=Montserrat:wght@900&family=Nosifer&display=swap" rel="stylesheet"> </head>
   <body>
-    <div id="main">
-      <div class="page1"><img src="2.jpg">
-        <div class="logo">BB <br>CUSTOM
-
-
-
+    <div class="main">
+      <div class="page1"> <!--<img src="2.jpg">  -->
+        <div class="logo"><img src="LOGO5.png"></div>
+        <div class="przyciski">
+          <div class="buttons omnie"><a href="#x">O MNIE</a></div>
+          <div class="buttons zamow">ZAMOW</div>
         </div>
-
       </div>
+
       <nav>
-        <div class="menu">
-          <div class="pasek">
-          </div>
-        </div>
-      </nav>
+        
+          <button class="sidebar-toggle menu"></button>
+          <aside class="sidebar"><button class="close-btn"></button>
+            <div class="sidebar-header"> <img src="LOGO3.png"> </div>
+            <ul>
+              <li><a href="omnie.html">ZAMÓW</a></li>
+              <li><a href="index.html">ARTYSCI</a></li>
+              <li><a href="index.html">GALERIA</a></li>
+              <li><a href="index.html">KONAKT</a></li>
+            </ul>
+          </aside>
+        </nav>
       
-      <div class="przyciski">
-        <div class="buttons omnie">O MNIE</div>
-        <div class="buttons zamow">ZAMOW</div>
-      </div>
       
-      <div class="page2">
-        <img  src="zdj1.jpg">
+      
+      <div class="page2" id="x">
+        <img  class="pic2" src="zdj4.png">
         <div class="tekst">
-            <div class="art1">TWOJA WŁASNA KURTKA<br>
-              <p>Stworzymy dla Ciebie spersonalizowaną kurtkę jeansową według TWOJEGO PROJEKTU</p>
-            </div>
-        <div class="rozwin a1"> 
-        <p>GALERIA</p>
+            <div class="art1">
+              <div class="art1-header"> TWOJA WŁASNA KURTKA</div>
+              <div class="art1-text">Stworzymy dla Ciebie spersonalizowaną kurtkę jeansową według</div>
+              <button class="art1-btn"><a href="omnie.html">TWOJEGO PROJEKTU</a></button>
+              
+            
+              
 
+
+
+
+            </div>
+          <div class="container">
+            <div class="expand">  <p>Masz pytanie?</p> </div>
+            <divv class="expanded-content">
+              <ul>
+                <li>zaprojektuj własny wzór</li>
+                <li>nie masz pomsłu? <br>Zrobimy to za ciebie</li>
+                <li>najwyższa jakość materiałów</li>
+                <li>stały kontakt z artystą podczas zamówienia</li>
+              </ul>
+        </div>
+        </div>
+        
+      </div> 
+
+      <div class="page3">
+
+        <div class="left">
+          <article>
+            <p>A MOŻE KICKSY?</p>
+            <div class="left-btn">ZOBACZ NASZE BUTY</div>
+            <div class="left-content">
+              <div>AIRFORCE1</div>
+              <div>CONVERSY</div>
+              <div>JORDANY</div>
+            </div>
+          </article>
+        </div>
+        <div class="right">
+          <article></article>
         </div>
       </div>
 
+      <div class="page4">
+        <div class="page4-header">WYBIERZ ARTYSTĘ</div>
+        <div class="page4 content-left">
+          <div class="lines-container"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+        </div>
+        <div class="page4 content-right"></div>
       </div>
+  
+
+
+  <div class="modal">
+    <div class="modal-header">
+      <div class="title">example modal</div>
+      
     </div>
+    <div class="modal-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, eaque,
+       et id qui quasi nesciunt natus quibusdam
+       ex eos accusamus ratione fugit! Explicabo reprehenderit recusandae 
+       distinctio perspiciatis asperiores cumque repellendus?
+    </div>
+  </div>
+  <div class="overlay"></div>
+  
+  
+  
+  
+  <script src="java.js"></script>
   </body>
 </html>
 
-
+<!-- <div class="art3">
+  <p>ZAMÓW JUZ DZISIAJ!</p>
+</div> -->
