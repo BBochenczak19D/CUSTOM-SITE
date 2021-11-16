@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  background: #e94957;
+  font-family: 'Khula', sans-serif;
+
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.page-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.container-form {
+  width: 700px;
+  height: 700px;
+  background-color: #edf2f4;
+  opacity: 0.6;
+  border-radius: 100px;
+  transition: all 250ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-form:hover {
+  transform: scale(1.01);
+  opacity: 1;
+  transition: all 250ms;
+}
+input {
+  display: block;
+  padding: 30px;
+  border: none;
+  border-radius: 30px;
+  margin: 40px;
+}
+input [type='email'] {
+  width: 50%;
+  height: 50%;
+}
+input[type='textarea'] {
+  width: 50%;
+  height: 50%;
+}
+input[type='submit'] {
+  background: #e94957;
+  color: #edf2f4;
+  box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,
+    rgba(1, 61, 11, 0.781) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(2, 58, 23, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 8px,
+    #007157 0 16px 40px;
+  transition: all 250ms;
+  text-transform: uppercase;
+}
+input[type='submit']:hover {
+  box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,
+    rgba(255, 3, 45, 0.781) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(255, 0, 0, 0.541) 0 16px 32px;
+  transform: scale(1.02);
+  transition: all 300ms;
+}
