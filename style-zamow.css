@@ -20,12 +20,15 @@ html {
   width: 700px;
   height: 700px;
   background-color: #edf2f4;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 100px;
   transition: all 250ms;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 15vh;
 }
 .container-form:hover {
   transform: scale(1.01);
@@ -33,7 +36,6 @@ html {
   transition: all 250ms;
 }
 input {
-  display: block;
   padding: 30px;
   border: none;
   border-radius: 30px;
@@ -48,8 +50,9 @@ input[type='textarea'] {
   height: 50%;
 }
 input[type='submit'] {
-  background: #e94957;
+  background: #0b7157;
   color: #edf2f4;
+  border: none;
   box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,
     rgba(1, 61, 11, 0.781) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
     rgba(2, 58, 23, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 8px,
@@ -64,4 +67,35 @@ input[type='submit']:hover {
     rgba(255, 0, 0, 0.541) 0 16px 32px;
   transform: scale(1.02);
   transition: all 300ms;
+  border: none;
+}
+.form-header {
+  font-size: 2.2em;
+  padding: 40px;
+  color: #0b7157;
+}
+.container-anim {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.container-anim div {
+  height: 1px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #edf2f4;
+  position: absolute;
+  transition: all 0.1s;
+}
+.container-anim div:nth-child(1) {
+  width: 33%;
+  top: 300px;
+}
+.container-anim div:nth-child(2) {
+  width: 66%;
+  top: 100px;
+}
+.container-anim div:nth-child(3) {
+  width: 40%;
+  top: 700px;
 }

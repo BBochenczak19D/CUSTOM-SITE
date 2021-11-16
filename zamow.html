@@ -26,15 +26,19 @@
   </head>
   <body>
     <div class="page-form">
+      <div class="container-anim">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div class="container-form">
         <form>
-          <label>
-            Opisz swoj pomysl na customa a my go wycenimy dla ciebie!</label
-          >
+          <div class="form-header">
+            Opisz swoj pomysl na customa a my go wycenimy dla ciebie!
+          </div>
           <input
             type="email"
             required="required"
-            class="mail"
             placeholder="Podaj swojego maila: "
           />
           <input
@@ -43,6 +47,7 @@
             cols="50"
             placeholder="Opisz swoj pomysl..."
           />
+          <input type="file" />
           <input type="submit" value="wyslij" />
         </form>
       </div>
