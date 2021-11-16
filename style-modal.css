@@ -5,7 +5,7 @@
     transform: translate(-50%,-50%) scale(0);
     border: 1px black solid;
     border-radius: 20px;
-    z-index: 2000;
+    z-index: 5000;
     background-color: white;
     max-width: 50%;
     height: 25%;
@@ -35,7 +35,7 @@
     bottom: 0;
     background-color: black;
     transition: all 1.5s;
-    z-index: 10;
+    z-index: 4999;
     pointer-events: none;
     
   }

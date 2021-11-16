@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-100%);
+    transform: translate(0,-100%);
     opacity: 98%;
     width: 100%;
     height:100%;
@@ -83,7 +83,7 @@
 
   }
   .show-sidebar{
-    transform: translate(0);
+    transform: translate(0,0);
     transition: all 0.5s linear;
   }
   /* @media screen and (min-width:676px){
@@ -177,7 +177,7 @@
     width: 100%;
     height: 100vh;
     background-image: url(' 2.jpg');
-    scroll-snap-type: y mandatory;
+    
   }
   .logo{
     width: 500px;
@@ -188,19 +188,19 @@
     position: absolute;
     top: 120px;
     justify-content: center;
-   
+    transform-style: preserve-3d;
     box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 3, 45, 0.781) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(255, 0, 0, 0.541) 0 16px 32px;
     display: flex;
    
     
     
   }
-  .logo img:hover{
+  /* .logo img:hover{
     box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(1, 61, 11, 0.781) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(2, 58, 23, 0.15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 8px,#007157  0 16px 40px;
     transform: scale(1.07) rotate(-1deg);
     transition: all 300ms;
     border-radius: 300px;
-  }
+  } */
   
  
   .page1 img{
@@ -245,16 +245,16 @@
  .page2{
      
      display: flex;
-    background-color: #EDF2F4;
+    background-color:  #f1eee4 ;
      font-size: 30px;
-     height: 100%;
-     scroll-snap-type: y mandatory;
+     
+     scroll-snap-align: start;
      height: 100vh;
     
  }
  .art1{
      padding: 30px;
-     height: 300px;
+     height: 33vh;
      word-spacing: 12px;
      background-color: #E94957;
      font-family: 'Khula', sans-serif; font-family: 'Montserrat', sans-serif;
@@ -365,6 +365,7 @@ box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 3, 45, 0.781
   display: inline;
   color: #EDF2F4;
   font-family: 'Khula', sans-serif; font-family: 'Montserrat', sans-serif;
+  transition: all 0.2s linear;
 }
 .active-p{
   transform:rotate(90deg);
@@ -427,6 +428,7 @@ box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 3, 45, 0.781
 
 .main{
   scroll-snap-type: y mandatory;
+  overflow-x: scroll;
 }
 .scroll{
   scroll-snap-align: start;

@@ -3,7 +3,7 @@
     height: 100vh;
     width:100%;
     display: flex;
-      
+    scroll-snap-align: start;  
   }
   
   .left
@@ -69,40 +69,76 @@
   /*  ----------------------------------- PAGE 4 --------------------------- */
 
   .page4{
-      
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      font-family: 'Khula', sans-serif;
+    scroll-snap-align: start;   
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  font-family: 'Khula', sans-serif;
   text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color:  #EDF2F4;
-    
-      
+  font-family: 'Montserrat', sans-serif;
+  color:  #EDF2F4; 
   }
   .page4.content-left{
     height: 100vh;
     width: 50%; 
     background-color: #007157;
-    padding: 60px;
-    
-    
   }
   .page4.content-right{
     height: 100vh;
     width: 50%;
     background-color: #E94957;
-    padding: 60px;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-character;
+  }
+  .page4.content-right p{
+    padding: 30px;
+    font-size: 40px;
+    word-spacing: 10px;
+    margin-top:80px;
+   
+    
+  }
+  .artist-btn{
+    font-family: 'Khula', sans-serif;
+    text-align: center;
+    padding:30px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #E94957;
+    border: 2px #f1eee4 solid;
+    border-radius: 100px;
+    font-size: 30px;
+    width: 50%;
+    transition: all 500ms;
+  }
+  .artist-btn:hover{
+    background-color:#f1eee4;
+    transition: all 500ms;
+    transform: rotate(1.2deg) scale(1.05);
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 -25px 18px -14px inset,rgba(255, 255, 255, 0.781) 0 1px 2px,rgba(255, 255, 255, 0.15) 0 2px 4px,rgba(255, 255, 255, 0.15) 0 4px 8px,rgba(255, 255, 255, 0.15) 0 8px 16px,rgba(255, 255, 255, 0.459) 0 16px 32px;
+
+  
   }
   .page4-header{
       background:none;
       font-size: 150px;
-      z-index: 3500;
+     
       display: flex;
       position: absolute;
       left: 80px;
-      margin-top: 200px;
-      
+      margin-top: 140px;
+      opacity: 0.9;
+      transition: all 250ms;
+  }
+  .page4-header:hover{
+  opacity: 1;
+    transition: all 250ms;
+    
   }
   .lines-container{
     display: flex;
@@ -117,27 +153,41 @@
     border-radius: 100px;
     margin: 10px;
     position: relative;
+    transform: translate(-150%);
+    opacity: .5;
+    transition: all 700ms;
+  }
+  .line-active{
+    background-color:white;
+    width: 50%;
+    height: 3px;
+    border-radius: 100px;
+    margin: 10px;
+    position: relative;
+    transform: translate(0%);
+    opacity: 1;
+    transition: all 700ms;
     
   }
-  .line:nth-child(1){
+  .raz{
     width: 33%;
     left: 50px;
     top:800px;
   }
-  .line:nth-child(2){
+  .dwa{
     width: 75%;
     left: 33px;
     top:300px;
   }
-  .line:nth-child(3){
+  .trzy{
     width: 25%;
     top:700px;
   }
-  .line:nth-child(4){
+  .cztery{
     width: 25%;
     top:-33px;
   }
-  .line:nth-child(5){
+  .piec{
     width: 150%;
     top: 2vh;
   }

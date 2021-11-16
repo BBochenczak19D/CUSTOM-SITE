@@ -39,7 +39,7 @@ expandBtn.addEventListener('click',function(){
 })
 
 const page2 = document.querySelector('.page2')
-page2.addEventListener('mouseover',function(){
+page2.addEventListener('mouseenter',function(){
     window.scroll({
         top: 955,
         
@@ -47,7 +47,7 @@ page2.addEventListener('mouseover',function(){
       });
 })
 const page3 = document.querySelector('.page3')
-page3.addEventListener('mouseover',function(){
+page3.addEventListener('mouseenter',function(){
     window.scroll({
         top: 1910,
         
@@ -55,14 +55,13 @@ page3.addEventListener('mouseover',function(){
       });
 })
 const page4 = document.querySelector('.page4')
-page4.addEventListener('mouseover',function(){
+page4.addEventListener('mouseenter',function(){
     window.scroll({
         top: 2870,
         
         behavior: 'smooth'
       });
 })
-
 
 const overlay = document.querySelector('.overlay')
 const modal = document.querySelector('.modal')
@@ -72,7 +71,7 @@ window.addEventListener('scroll',function(){
     const scrolled = window.scrollY;
     if(Math.ceil(scrolled)  == scrollable)
     {
-        if(modal.classList.contains('.modal-active')){
+        if(modal.classList.contains('modal-active')){
             modal.classList.remove('modal-active')
             overlay.classList.remove('overlay-active')
            
@@ -88,8 +87,59 @@ window.addEventListener('scroll',function(){
         modal.classList.remove('modal-active')
     }
 });
+const linia1 = document.querySelector('.raz')
+const linia2 = document.querySelector('.dwa')
+const linia3 = document.querySelector('.trzy')
+const linia4 = document.querySelector('.cztery')
+const linia5 = document.querySelector('.piec')
+const artysta = document.querySelectorAll('.page4-header')
+console.log(artysta)
+page4.addEventListener('mouseover',function(){
+
+if(linia1.classList.contains('line-active')){
+    linia1.classList.remove('line-active')
+    linia2.classList.remove('line-active')
+    linia3.classList.remove('line-active')
+    linia4.classList.remove('line-active')
+    linia5.classList.remove('line-active')
+    
+}
+else
+{
+    linia1.classList.add("line-active")
+    linia2.classList.add('line-active')
+    linia3.classList.add('line-active')
+    linia4.classList.add('line-active')
+    linia5.classList.add('line-active')
+  
+}
+
+})
+page4.addEventListener('mouseout',function(){
+
+    
+    linia1.classList.remove('line-active')
+    linia2.classList.remove('line-active')
+    linia3.classList.remove('line-active')
+    linia4.classList.remove('line-active')
+    linia5.classList.remove('line-active')
+    
+    
+    })
+
+const logo = document.querySelector('.logo')
+logo.addEventListener('mousemove', (e) => {
+
+    let x = (window.innerWidth / 2 - e.pageX) /6;
+    let y = (window.innerHeight / 2 - e.pageY) /15;
+    logo.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`
+
+});
+logo.addEventListener('mouseleave', (e)=> {
+
+    logo.style.transform = `rotateY(0deg) rotateX(0deg)`
+    logo.style.transform = `transition: all 300ms`
 
 
-
-
+})
 
