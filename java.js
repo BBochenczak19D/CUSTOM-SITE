@@ -18,6 +18,7 @@ closeBtn.addEventListener('click',function(){
     sidebar.classList.remove('show-sidebar')
      
 }) 
+
 const expand_pic = document.querySelector('.art2')
 const expandBtn = document.querySelector('.expand')
 const expandedContent = document.querySelector('.expanded-content')
@@ -142,4 +143,5 @@ logo.addEventListener('mouseleave', (e)=> {
 
 
 })
+
 

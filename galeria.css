@@ -1,28 +1,95 @@
 body{
-    background-color: black;
-   
-    margin: 0;
-    
+    background-color: rgb(255, 255, 255);
+    margin: 0; 
 }
+
+/* ------------------ header overlay ------------- */
 header{
     width: 100%;
-    height: 100vh;
-    background-color: #000000e3;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
     display: flex;
     justify-content: center;
     align-items: flex-start;
     scroll-snap-align: center;
+    position: -webkit-sticky;
+  position: fixed;
+    top: 0;
    
 }
-main{
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+header a{
+    text-decoration: none;
+    color: #EDF2F4;
+}
+
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: 'Khula', sans-serif; font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #007157;
+    transform: translate(-100%,0);
+    animation-name: fromLeft;
+    animation-duration: 999ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    width: 50%;
+    opacity: .97;
+    height: 100%;
+    color: #EDF2F4;
+    transition: all 250ms;
+}
+@keyframes fromLeft{
+    0%{
+        
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: 'Khula', sans-serif; font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #E94957;
+    width: 50%;
+    transform: translate(100%,0);
+    height: 100%;
+    color: #EDF2F4;
+    opacity: .97;
+    animation-name: fromRight;
+    animation-duration: 888ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 333ms;
+    transition: all 250ms;
+}
+@keyframes fromRight{
+    0%{
+        
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.header-right:hover{
+    opacity: 1;
+    transition: all 250ms;
+}
+.header-left:hover{
+    opacity: 1;
+    transition: all 250ms;
 }
 .close-header
 {
-    transform: translate(-0%,-100%);
-    transition: all 500ms;
+    display: none;
+  
+    
 }
 header .text-container{
     color: white;
@@ -44,6 +111,48 @@ header .text-container p + p{
     font-size: 80px;
 }
 
+
+/* ------------------ MAIN CODE - GALLERY ------------- */
+.wrapper-gallery{
+    margin: 5vw 10vw;
+}
+.index-gallery-hidden{
+    pointer-events: none;
+}
+.index-gallery-shown{
+    pointer-events: all;
+}
+/* main container*/
+#index-gallery{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 20vw;
+    column-gap: 20px;
+    grid-template-areas: 
+    "img1 img1 img4 img4"
+    "img1 img1 img4 img4"
+    "img1 img1 img4 img4"
+
+    "img3 img2 img2 img6"
+    "img3 img2 img2 img6"
+    "img3 img2 img2 img6";
+    
+}
+
+/* style dla każdego kafelka*/
+#index-gallery .galerry{
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+}
+
 .galerry div{
     width: 100%;
     height: 100%;
@@ -52,9 +161,11 @@ header .text-container p + p{
     display: flex;
     justify-content: center;
     align-items: center;
+
     
     
 }
+
 .galerry div a{
     font-family: 'Khula', sans-serif; font-family: 'Montserrat', sans-serif;
     color: white;
@@ -70,74 +181,64 @@ header .text-container p + p{
 
 
 
-#index-gallery{
-    scroll-snap-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 30px;
-    grid-template-areas: 
-    "img1 img1 img2 img4 img4"
-    "img1 img1 img2 img4 img4"
-    "img1 img1 img3 img4 img4"
-    "img5 img5 img6 img7 img8"
-    "img5 img5 img6 img7 img8";
-}
 
-#index-gallery .galerry{
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-
-}
 
 
 
 #index-gallery .img1{
     background-image:url('zdj1.jpg');
     grid-area: img1;
-    height: 920px;
+    height: 790px;
+    
+   
 }
 #index-gallery .img2{
     background-image:url('kurtki/kurtka6.JPG');
-    height: 600px;
+    grid-area: img2;
+    height: 790px;
+    
 }
 #index-gallery .img3{
-    background-image:url('kurtki/kurtka5.jpg');
+    background-image:url('kurtki/kurtka1.jpg');
     grid-area: img3;
+    height: 790px;
 }
 #index-gallery .img4{
     background-image:url('kurtki/kurtka2.JPG');
     grid-area: img4;
-    height: 920px;
+    height: 790px;
+    
 }
 #index-gallery .img5{
-    background-image:url('5_3.png');
+    background-image:url('kurtki/kurtka3.jpg');
+    height: 790px;
     grid-area: img5;
 }
 #index-gallery .img6{
     background-image:url('5_3.png');
     grid-area: img6;
+    height: 790px;
+    
 }
 #index-gallery .img7{
     background-image:url('5_3.png');
     grid-area: img7;
+  
 }
 #index-gallery .img8{
     background-image:url('5_3.png');
     grid-area: img8;
+   
 }
 #index-gallery .img9{
     background-image:url('5_3.png');
     grid-area: img9;
+   
 }
 #index-gallery .img10{
     background-image:url('5_3.png');
     grid-area: img10;
-}
+} 
 
 
 
@@ -157,6 +258,9 @@ header .text-container p + p{
     opacity: 1;
     border: none;
     font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50vh;
+    top: 75vh;
 
   }
  

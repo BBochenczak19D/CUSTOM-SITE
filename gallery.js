@@ -1,11 +1,19 @@
 const showGalleryBtn = document.querySelector('.gallery-btn')
 const galleryHeader = document.querySelector('.header-gallery')
 const gallerydiv = document.querySelectorAll('.galerry div')
-const main = document.querySelector('index-gallery');
+const shownGallery = document.getElementById('index-gallery')
+console.log(shownGallery)
+
 console.log(gallerydiv)
 
 showGalleryBtn.addEventListener('click',function(){
     galleryHeader.classList.add('close-header');
-    galleryHeader.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    if(shownGallery.classList.contains('index-gallery-hidden'))
+    {
+        shownGallery.classList.remove('index-gallery-hidden');
+    shownGallery.classList.add('index-gallery-shown');
+    }
+    
+    
     
 })
