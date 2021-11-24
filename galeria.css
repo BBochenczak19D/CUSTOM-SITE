@@ -229,7 +229,7 @@ header .text-container p + p{
     height: 790px;
 }
 #index-gallery .img4{
-    background-image:url('kurtka2.JPG');
+    background-image:url('kurtka2.jpg');
     grid-area: img4;
     height: 790px;
     
