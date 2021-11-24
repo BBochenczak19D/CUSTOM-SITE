@@ -6,7 +6,7 @@ console.log(shownGallery)
 
 console.log(gallerydiv)
 
-showGalleryBtn.addEventListener('click',function(){
+/*showGalleryBtn.addEventListener('click',function(){
     galleryHeader.classList.add('close-header');
     if(shownGallery.classList.contains('index-gallery-hidden'))
     {
@@ -16,4 +16,32 @@ showGalleryBtn.addEventListener('click',function(){
     
     
     
+})*/
+
+const kurtki = document.querySelector('.header-left')
+const buty = document.querySelector('.header-right')
+kurtki.addEventListener('click',function(){
+    galleryHeader.classList.add('close-header');
+    if(shownGallery.classList.contains('index-gallery-hidden'))
+    {
+        shownGallery.classList.remove('index-gallery-hidden');
+    shownGallery.classList.add('index-gallery-shown');
+    }
+
+    this.remove();
+    buty.remove();
 })
+
+
+buty.addEventListener('click',function(){
+    galleryHeader.classList.add('close-header');
+    if(shownGallery.classList.contains('index-gallery-hidden'))
+    {
+        shownGallery.classList.remove('index-gallery-hidden');
+    shownGallery.classList.add('index-gallery-shown');
+    }
+   
+    this.remove();
+    kurtki.remove();
+})
+
