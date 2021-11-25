@@ -27,7 +27,7 @@ kurtki.addEventListener('click',function(){
         shownGallery.classList.remove('index-gallery-hidden');
     shownGallery.classList.add('index-gallery-shown');
     }
-
+    window.scrollTo(0, document.querySelector(".img12").offsetTop);
     this.remove();
     buty.remove();
 })
