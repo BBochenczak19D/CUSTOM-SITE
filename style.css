@@ -468,9 +468,7 @@ html{
 
 
 @media screen and (min-width:980px){
-  .page4-header{
-    background:none;
-  }
+  
   .sidebar ul li:hover{
     background-color: #ec6570;
     width: 200%;
