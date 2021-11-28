@@ -1,3 +1,7 @@
+
+
+
+
 body {
   margin: 0px;
  
@@ -21,8 +25,8 @@ html {
   height: 100vh;
 }
 .container-form {
-  width: 700px;
-  height: 700px;
+  width: 70vh;
+  height: 70vh;
   background-color: #edf2f4;
   opacity: 0.8;
   border-radius: 100px;
@@ -103,3 +107,5 @@ input[type='submit']:hover {
   width: 40%;
   top: 700px;
 }
+
+
