@@ -48,6 +48,8 @@ card.addEventListener('click',function(){
     leftPage.style.backgroundRepeat = "no-repeat";
     leftPage.style.backgroundSize = "cover";
     leftPage.style.backgroundPosition = "center";
+
+   
    // background-repeat: no-repeat;
    // background-size: cover;
   //  background-position: center;
@@ -73,10 +75,10 @@ card.addEventListener('click',function(){
     RightPage.style.opacity = "0.7";
     RightPage.style.transition = "all 300ms";
    
-    RightPage.innerHTML = "Contrary to popular bood and Evil) by C sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatt over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites<br><br>     of the word in classical literat<br>ure, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10he Extremes of Go from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written i<br><br> n 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatod and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first<br><br>  line of Lorem Ipsum, , comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from Cicero are also reproduced in their exact original form, ac<br><br> companied by English versions from the 1914 translation by H. Rackham.";
+    RightPage.innerHTML = "Contrary to Lorem Ipsum passage, and going through theum comes from se and Evil) by Cicero, written i<br><br> n 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatod and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first<br><br>  line of Lorem Ipsum, , comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from Cicero are also reproduced in their exact original form, ac<br><br> companied by English versions from the 1914 translation by H. Rackham.";
    
 
-
+   
 
     //overlay
     boverlay.style.width = "100%";

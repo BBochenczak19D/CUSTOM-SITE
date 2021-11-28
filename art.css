@@ -37,5 +37,15 @@ body{
     transition: all 250ms;
 }
 
+@media screen and (max-width:600px){
+    body:nth-child(3){
+        width: 20vh;
+    }
+    body:nth-child(4){
+        width: 20vh;
+    }
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@700&family=Montserrat:wght@900&family=Nosifer&family=Russo+One&display=swap');
 
