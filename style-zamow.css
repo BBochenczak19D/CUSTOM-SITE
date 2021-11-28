@@ -35,7 +35,7 @@ html {
   justify-content: center;
   flex-direction: column;
   width: 60vh;
-  height: 60vh;
+  height: 60%;
   position: fixed;
   padding: 30px;
 }
@@ -107,6 +107,37 @@ form{
     margin: 23px;
    
   }
+  .sidebar{transform: translate(0,-200%);}
 }
+
+
+
+
+@media screen and (max-width:480px){
+  .menu{
+  
+   transform: scale(.5);
+  }
+  .menu:hover{
+    transform: scale(.5);
+   }
+  input {
+    padding: 23px;
+    border: none;
+    border-radius: 23px;
+    margin: 23px;
+   
+  }
+  input[type='submit'] {
+   width: 30%;
+  }
+  .sidebar{transform: translate(0,-300%);}
+
+  .container-form{
+    width: 30vh;
+  }
+
+}
+
 
 
