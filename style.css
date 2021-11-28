@@ -335,6 +335,7 @@ box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 3, 45, 0.781
     align-items: center;
     justify-content: center;
     color:#007157;
+    
  }
  
  .expand-active{
@@ -467,7 +468,9 @@ html{
 
 
 @media screen and (min-width:980px){
-  
+  .page4-header{
+    background:none;
+  }
   .sidebar ul li:hover{
     background-color: #ec6570;
     width: 200%;
@@ -491,25 +494,33 @@ html{
 @media screen and (max-width:480px){
   .menu{
   
-   transform: scale(.5);
+   transform: scale(.77);
   }
   .menu:hover{
-    transform: scale(.5);
+    transform: scale(.77);
    }
 
   .logo{
-    transform: scale(.5);
+    transform: scale(.77);
   }
   .logo:hover{
-    transform: scale(.66);
+    transform: scale(.77);
   }
   .buttons {
    
     margin-left: 5px;
     margin-right: 5px;
-    transform: scale(.66);
+    transform: scale(.77);
 
   }
+  .expand{
+    
+    display: none;
+  
+ }
+ 
+ 
 
+ 
 }
-
+ 
