@@ -5,7 +5,13 @@ body{
     place-items: center;
     min-height: 100vh;
     line-height: 1.6;
-    font-family: 'Khula', sans-serif; font-family: 'Montserrat', sans-serif;
+    font-family: 'Khula', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Nosifer', cursive;
+
+    font-family: 'Russo One', sans-serif;
 }
 .card-header{
     background-image: url('1.JPG');
@@ -14,11 +20,14 @@ body{
     background-position: center;
     width: 60vh;
     height: 80vh;
+    border-radius: 30px;
     box-shadow: rgba(255, 0, 0, 0.781) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(2, 58, 23, 0.15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 8px,#e63947  0 10px 40px;
+    position:fixed;
 }
 .card-header div{
     background-color: black;
     opacity: .6;
+    border-radius: 30px;
     height: 100%;
     width: 100%;
     transition: all 250ms;
@@ -27,4 +36,6 @@ body{
     opacity: 0;
     transition: all 250ms;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@700&family=Montserrat:wght@900&family=Nosifer&family=Russo+One&display=swap');
 
