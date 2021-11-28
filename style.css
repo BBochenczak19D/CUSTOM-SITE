@@ -258,6 +258,13 @@ nav{
      height: 100vh;
     
  }
+ .tekst{
+   height: 100%;
+   width: 100%;
+ }
+.pic2{
+  display: none;
+}
  .art1{
      padding: 30px;
      
@@ -397,7 +404,7 @@ box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 3, 45, 0.781
 .expanded-content{
   
   font-size: 30px;
-  transform: translate(-500%);
+  transform: translate(-500%,0);
   width: 100%;
   
 }
@@ -405,7 +412,7 @@ box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(255, 3, 45, 0.781
 .expanded-content-active{
   opacity: 100%;
   
-  transform: translate(0%);
+  transform: translate(0%,0%);
   width: 100%;
    height: 100%;
 }
@@ -468,4 +475,13 @@ html{
     transform: scale(1.02);
     
   }
+  
+
+}
+
+@media screen and (min-width:1400px){
+  .pic2{
+    display: block;
+  }
+
 }
