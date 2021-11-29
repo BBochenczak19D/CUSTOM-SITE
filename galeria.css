@@ -1,6 +1,7 @@
 
 body{
-    background-color: rgb(255, 255, 255);
+   
+    transition: all 300ms;
 
 }
 .menu{
@@ -16,7 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 100%;
-  
+    z-index: 2;
     box-shadow: rgba(255, 0, 0, 0.2) 0 -25px 18px -14px inset,rgba(1, 61, 11, 0.781) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(2, 58, 23, 0.15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 8px,#007157  0 16px 40px;
   }
   .menu:hover{
@@ -25,6 +26,48 @@ body{
     transform: scale(1.02) rotate(-1deg);
     transition: all 300ms;
   }
+
+/*--------------- dark/light mode ----------*/
+
+.colortheme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+    
+    
+}
+.colortheme button{
+    background-color: black;
+    width:10vh;
+    height: 3vh;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    display: flex;
+    transition: all 300ms;
+    align-items: center;
+}
+
+.colortheme button div{
+    background-color: #EDF2F4;
+    width: 2vh;
+    height: 2vh;
+    border: none;
+    border-radius: 100px;
+    transition: all 300ms;
+}
+  
+.active-btn-color{
+    background-color: white !important;
+    transition: all 300ms;
+}
+.active-btn-colordiv{
+    background-color: rgb(0, 0, 0)!important;
+    transform: translate(300%,0);
+    transition: all 300ms;
+}
+
 /* ----------------------------------------- header overlay */
   header{
     width: 100%;
@@ -153,33 +196,73 @@ header .text-container p + p{
     row-gap: 20vw;
     column-gap: 20px;
     grid-template-areas: 
-    "img1 img1 img4 img4"
-    "img1 img1 img4 img4"
-    "img1 img1 img4 img4"
+    "img1 img1"
+    "img1 img1"
+    "img1 img1"
 
-    "img1 img1 img4 img4"
-    "img1 img1 img4 img4"
-    "img1 img1 img4 img4"
-
-    "img3 img2 img2 img6"
-    "img3 img2 img2 img6"
-    "img3 img2 img2 img6"
-
-    "img8 img7 img7 img9"
-    "img8 img7 img7 img9"
-    "img8 img7 img7 img9"
-
-    "img5 img10 img10 img11"
-    "img5 img10 img10 img11"
-    "img5 img10 img10 img11"
+    "img4 img4"
+    "img4 img4"
+    "img4 img4"
     
-    "img12 img13 img13 img14"
-    "img12 img13 img13 img14"
-    "img12 img13 img13 img14"
+    "img3 img3"
+    "img3 img3"
+    "img3 img3"
+    
+    "img2 img2"
+    "img2 img2"
+    "img2 img2" 
 
-    "img15 img16 img16 img17"
-    "img15 img16 img16 img17"
-    "img15 img16 img16 img17";
+    "img6 img6" 
+    "img6 img6"
+    "img6 img6"
+
+    "img8 img8"
+    "img8 img8"
+    "img8 img8"
+    
+    "img7 img7"
+    "img7 img7"
+    "img7 img7"
+    
+    "img9 img9"
+    "img9 img9"
+    "img9 img9"
+
+    "img5 img5"
+    "img5 img5"
+    "img5 img5"
+
+    "img10 img10"
+    "img10 img10"
+    "img10 img10"
+
+    "img11 img11"
+    "img11 img11"
+    "img11 img11"
+
+    "img12 img12"
+    "img12 img12"
+    "img12 img12"
+
+    "img13 img13"
+    "img13 img13"
+    "img13 img13"
+
+    "img14 img14"
+    "img14 img14"
+    "img14 img14"
+
+    "img15 img15"
+    "img15 img15"
+    "img15 img15"
+
+    "img16 img16"
+    "img16 img16"
+    "img16 img16"
+    "img17 img17"
+    "img17 img17"
+    "img17 img17"
+    ;
     
 }
 
@@ -476,7 +559,33 @@ body{
     
   }
     
-    
+  .menu{
+      z-index: 1;
+  }
   
+  .colortheme {
     
+    margin-top: 30px;
+    
+}
+.colortheme button{
+    background-color: black;
+    width:15vh;
+    height: 5vh;
+   
+}
+
+.colortheme button div{
+    background-color: #EDF2F4;
+    width: 4vh;
+    height: 4vh;
+ 
+}
+.active-btn-colordiv{
+    
+    transform: translate(250%,0);
+    
+}
+
+
 }

@@ -45,3 +45,25 @@ buty.addEventListener('click',function(){
     kurtki.remove();
 })
 
+const changeColorTheme = document.querySelector('.colortheme button')
+const animColorTheme = document.querySelector('.colortheme button div')
+const background = document.querySelector('body')
+console.log(changeColorTheme)
+console.log(animColorTheme)
+console.log(background)
+
+changeColorTheme.addEventListener('click',function(){
+
+    if(changeColorTheme.classList.contains('active-btn-color')){
+        changeColorTheme.classList.remove('active-btn-color')
+        animColorTheme.classList.remove('active-btn-colordiv')
+        background.style.backgroundColor = "white"
+    }
+    else
+    {
+        changeColorTheme.classList.add('active-btn-color')
+        animColorTheme.classList.add('active-btn-colordiv')
+        background.style.backgroundColor = "black"
+    }
+
+})
