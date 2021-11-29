@@ -183,6 +183,9 @@ nav{
     width: 100%;
     height: 100vh;
     background-image: url(' 2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
   }
   .logo{
@@ -516,8 +519,29 @@ html{
     display: none;
   
  }
- 
- 
+ .tekst{
+   background-color: #E94957;
+   display: flex;
+   justify-content: space-between;
+   
+ }
+ .art1-header{
+   margin: 30px;
+ }
+ .art1-text{
+   text-align:justify ;
+   font-size: 40px !important;
+   word-spacing: 0px !important;
+   
+ }
+ .art1-btn{
+   margin-top: 40px;
+   font-size: 45px !important;
+ }
+ .page3 .left article p{
+   color: #E94957;
+   text-shadow: 0 1px white, 1px 0 white, 0 -1px white;
+ }
 
  
 }

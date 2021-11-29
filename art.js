@@ -1,3 +1,29 @@
+const changeColorTheme = document.querySelector('.colortheme button')
+const animColorTheme = document.querySelector('.colortheme button div')
+const background = document.querySelector('body')
+console.log(changeColorTheme)
+console.log(animColorTheme)
+console.log(background)
+
+changeColorTheme.addEventListener('click',function(){
+
+    if(changeColorTheme.classList.contains('active-btn-color')){
+        changeColorTheme.classList.remove('active-btn-color')
+        animColorTheme.classList.remove('active-btn-colordiv')
+        background.style.backgroundColor = "white"
+    }
+    else
+    {
+        changeColorTheme.classList.add('active-btn-color')
+        animColorTheme.classList.add('active-btn-colordiv')
+        background.style.backgroundColor = "black"
+    }
+
+})
+
+
+
+
 const card = document.querySelector('.card-header')
 card.addEventListener('mouseenter',function(){
 
@@ -60,23 +86,33 @@ card.addEventListener('click',function(){
     RightPage.style.width = "35%";
     RightPage.style.height = "65%";
     //RightPage.style.fontSize = "2em";
-    RightPage.style.textAlign = "justify";
+    RightPage.style.textAlign = "center";
     RightPage.style.display = "flex";
     RightPage.style.alignContent = "center";
     RightPage.style.justifyContent = "center";
-    RightPage.style.padding= "20px";
-    RightPage.style.color = "black";
+    RightPage.style.flexDirection = "column";
+    RightPage.style.padding= "40px";
     RightPage.style.borderRadius = "20px";
     RightPage.style.position = "absolute";
     RightPage.style.top = "10vh";
     RightPage.style.right = "15vh";
     RightPage.style.zIndex = "1000";
-    RightPage.style.backgroundColor = "rgba(255,255,255)";
+    RightPage.style.fontSize = "2em";
+    RightPage.style.fontFamily = "'Montserrat', sans-serif";
+    if(changeColorTheme.classList.contains('active-btn-color'))
+    {
+        RightPage.style.backgroundColor = "black";
+        RightPage.style.color = "white";
+    }
+    else{
+        RightPage.style.backgroundColor = "white";
+        RightPage.style.color = "black";
+    }
+
     RightPage.style.opacity = "0.7";
     RightPage.style.transition = "all 300ms";
    
-    RightPage.innerHTML = "Contrary to Lorem Ipsum passage, and going through theum comes from se and Evil) by Cicero, written i<br><br> n 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treat from sections 1.10.32 and 1.10he Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatod and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first<br><br>  line of Lorem Ipsum, , comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from Cicero are also reproduced in their exact original form, ac<br><br> companied by English versions from the 1914 translation by H. Rackham.";
-   
+    RightPage.innerHTML = "BARBARA BOCHEŃCZAK <hr> CUSTOM ARTIST <br>";
 
    
 
@@ -119,25 +155,4 @@ card.addEventListener('click',function(){
 
 })
 
-const changeColorTheme = document.querySelector('.colortheme button')
-const animColorTheme = document.querySelector('.colortheme button div')
-const background = document.querySelector('body')
-console.log(changeColorTheme)
-console.log(animColorTheme)
-console.log(background)
 
-changeColorTheme.addEventListener('click',function(){
-
-    if(changeColorTheme.classList.contains('active-btn-color')){
-        changeColorTheme.classList.remove('active-btn-color')
-        animColorTheme.classList.remove('active-btn-colordiv')
-        background.style.backgroundColor = "white"
-    }
-    else
-    {
-        changeColorTheme.classList.add('active-btn-color')
-        animColorTheme.classList.add('active-btn-colordiv')
-        background.style.backgroundColor = "black"
-    }
-
-})
