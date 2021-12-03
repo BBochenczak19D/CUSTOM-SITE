@@ -40,30 +40,21 @@ expandBtn.addEventListener('click',function(){
 })
 
 const page2 = document.querySelector('.page2')
+const h2 = page2.clientHeight;
 page2.addEventListener('mouseenter',function(){
-    window.scroll({
-        top: 955,
-        
-        behavior: 'smooth'
-      });
+    window.scroll(0,h2)
 })
 const page3 = document.querySelector('.page3')
+const h3 = page3.clientHeight + h2;
 page3.addEventListener('mouseenter',function(){
-    window.scroll({
-        top: 1910,
-        
-        behavior: 'smooth'
-      });
+    window.scroll(0,h3)
 })
 const page4 = document.querySelector('.page4')
+const h4 = page4.clientHeight + h3 + h2;
 page4.addEventListener('mouseenter',function(){
-    window.scroll({
-        top: 2870,
-        
-        behavior: 'smooth'
-      });
+    window.scroll(0,h4);
 })
-
+console.log(h2,h3,h4)
 const overlay = document.querySelector('.overlay')
 const modal = document.querySelector('.modal')
 
