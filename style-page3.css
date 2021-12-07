@@ -304,7 +304,7 @@
    
   }
 
-  @media screen and (max-height: 900px)
+  @media screen and (max-height: 900px) 
   {
     .page4.content-right div{
   
@@ -338,15 +338,20 @@
     .page2 .expanded-content ul li:nth-child(4){
       display: none;
     }
-    .buttons.omnie{
+    
+    .logo{
+      top: 0;
+    }
+  }
+  @media screen and (max-height: 900px) and (min-width: 1600px)
+  {
+
+     .buttons.omnie{
       margin-left: 300px !important;
       margin-right: 300px !important;
     }
     .buttons.zamow{
       margin-left: 300px !important;
       margin-right: 300px !important;
-    }
-    .logo{
-      top: 0;
-    }
+    } 
   }
