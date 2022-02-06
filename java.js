@@ -38,7 +38,7 @@ expandBtn.addEventListener('click',function(){
         expandedp.innerHTML= "------"
     }
 })
-
+/*
 const page2 = document.querySelector('.page2')
 const h2 = page2.clientHeight;
 page2.addEventListener('mouseenter',function(){
@@ -78,7 +78,7 @@ window.addEventListener('scroll',function(){
         overlay.classList.remove('overlay-active')
         modal.classList.remove('modal-active')
     }
-});
+});*/
 const linia1 = document.querySelector('.raz')
 const linia2 = document.querySelector('.dwa')
 const linia3 = document.querySelector('.trzy')
